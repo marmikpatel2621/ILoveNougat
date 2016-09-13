@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zappos.ilovenougat.Activity.SixPmActivity"
+    tools:showIn="@layout/activity_six_pm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/productText"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navigationBarColor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:id="@+id/brandText"
+        android:layout_below="@+id/productText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/brandText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navigationBarColor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="originalprice"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/originalSixPriceText"
+        android:layout_below="@+id/imageView2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navigationBarColor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/originalSixPrice"
+        android:layout_toEndOf="@+id/originalSixPriceText"
+        android:layout_below="@+id/imageView2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="6pm price"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/priceSixText"
+        android:layout_below="@+id/originalSixPriceText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/priceSix"
+        android:layout_below="@+id/originalSixPriceText"
+        android:layout_toEndOf="@+id/priceSixText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="off"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/offSixText"
+        android:layout_toEndOf="@+id/priceSix"
+        android:layout_below="@+id/originalSixPriceText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/offSix"
+        android:layout_below="@+id/originalSixPriceText"
+        android:layout_toEndOf="@+id/offSixText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navigationBarColor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zappos price"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/priceZapposText"
+        android:layout_below="@+id/priceSixText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/navigationBarColor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/priceZappos"
+        android:layout_below="@+id/priceSixText"
+        android:layout_toEndOf="@+id/priceZapposText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/notification"
+        android:layout_below="@+id/priceZapposText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
